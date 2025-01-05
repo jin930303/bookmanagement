@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{top::menu}"></div>
+<body>
+<form method="post" th:action="@{/membersave}">
+  <div class="input_group">
+    <label for="id">아이디</label>
+  <input type="text" name="id" id="id">
+    <button type="button" name="idchk" id="idchk">중복확인</button>
+  </div>
+  <div class="input_group">
+  <label for="pw">패스워드</label>
+  <input type="password" name="pw" id="pw">
+  </div>
+  <div class="input_group">
+    <label for="pwchk">패스워드확인</label>
+    <input type="password" name="pwchk" id="pwchk">
+  </div>
+  <div class="input_group">
+    <label for="name">이름</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="input_group">
+    <label for="birth">생년월일</label>
+    <input type="date" name="birth" id="birth">
+  </div>
+  <div class="input_group">
+    <label for="nickname">닉네임</label>
+    <input type="text" name="nickname" id="nickname">
+  </div>
+<input type="submit" value="작성완료">
+</form>
+
+
+</body>
+
+</html>
